@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+</style>
+
+<body>
+    <section id="homecap">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ANSARI KITCHEN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav ">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="login.html"><i class="fa-solid fa-user"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="homeimg">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <h1>Great Neighbour's <br>
+                    Deserve Great Food
+                </h1>
+              <a href="#Categories"> <button  type="button" class="btn btn-secondary btn-lg">Order Now</button></a> 
+
+            </div>
+        </div>
+    </section>
+
+    <!-- **********************welcome message***************************** -->
+
+    <section id="message">
+        <div class="row message">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <h1>Welcome to Our Catering Service</h1>
+                <p>
+                    "WELCOME TO ANSARI KITCHEN, <br> where culinary excellence meets unparalleled <br>
+                    service. We're delighted to bring you atasty<br> of joy and sophistication.Allow us to <br>
+                    cater to your
+                    every culinary <br>need with passion and precision. <br> Your satisfication is our main <br>
+                    course,and we
+                    look forward<br> to serving you."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* **********************************MENU************************************** */ -->
+
+
+    <section id="Categories" class="border p-5 mb-3 rounded ">
+        <h4 class="border border-top-0 border-start-0 border-end-0  p-2 m-2 pb-3 text-center ">Food Catogories</h4>
+        <div class="menusection m-4">
+
+            <div class="items">
+                <img onclick="desifood()" src="images/biryani.jpg" alt="" width="100%" height="80%">
+                <p>Desi Dishes </p>
+            </div>
+            <div class="items">
+               <a href="sea.html"> <img src = "images/fish dish.jpg" alt="" width="100%" height="80%"></a>
+                <p>SeaFood Dishes</p>
+            </div>
+            <div class="items">
+                <img onclick = " chinesefood()" src="images/pasta.jpg" alt="" width="100%" height="80%">
+                <p>Chineese Dishes</p>
+            </div>
+            <div class="items">
+                <img src="images/roll.avif" alt="" width="100%" height="80%">
+                <p>Refreshment</p>
+            </div>
+            <div class="items">
+                <img src="images/sweet dish.png" alt="" width="100%" height="80%">
+                <p>Sweet Dishes</p>
+            </div>
+            <div class="items">
+                <img onclick=" chinesefood()" src="images/singaporean.jpg" alt="" width="100%" height="80%">
+                <p>Chineese Dishes</p>
+            </div>
+
+            <div class="items">
+                <img src="images/brost.jpg" alt="" width="100%" height="80%">
+                <p>Chicken Dishes</p>
+            </div>
+            <div class="items">
+             <a href="memoni.html">  <img src="images/memoni lehsan malida.jpg" alt="" width="100%" height="80%"></a> 
+                <p>Memoni Dishes</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- ***********************************Our services***************************** -->
+
+
+
+
+
+
+
+
+
+
+    <!-- **************************************about us***************************** -->
+    <section id="about us">
+        <div class="row mb-5 pt-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 about-us">
+                <h1>About Us</h1>
+                <p id="aboutpara">I'm Feroz, a dedicated professional with a passion for service beyond
+                    borders.Originally from Pakistan, I've worked in various countries, gaining expertise in
+                    Catering Service.
+                    <a onclick=" Readmore() " href="javascript:void(0)"><button
+                            class="border rounded-2 text-white bg-danger p-2">Read More</button></a>
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 about-us ">
+                <!-- <img src="images/catering service.jpg" alt=""> -->
+                <img src="images/coctail desert.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- **************************************Contact us***************************** -->
+
+    <section id="contact">
+        <form id="myfoam" action="#">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 contact">
+                    <h1>Contact Information</h1>
+                    <br>
+                    <h5>Fill up the foam and our team will <br> get back to you within 24 hours</h5>
+                    <br>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Phone:</span><a href="0315-2927789">0315-2927789</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Email:</span><a href="mailto:manusaleem509@gmail.com">Email me</a>
+                        </li>
+                    </ul>
+                    <div class="social-link">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/0315-2927789" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 form">
+                    <h2>send a message</h2>
+                    <div class="form-input">
+                        <input type="text" name="fname" id="fname" placeholder="Enter firstName">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="fname" id="lname" placeholder="Enter LastName">
+                    </div>
+                    <div class="form-input">
+                        <input type="email" name="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-input">
+                        <input type="password" name="password" id="password" placeholder="Enter Password">
+                    </div>
+                    <div class="form-input">
+                        <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter Message"></textarea>
+                    </div>
+                    <input type="submit" onclick="submitbtn()" value="Send message">
+                </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- </div> -->
+    </section>
+    </form>
+    <!-- ******************************google map****************************** -->
+
+    <section>
+        <iframe
+            src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8610.243282905565!2d66.99048171797102!3d24.858338083502254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb315f81a4d2187%3A0xc83c8f39e4980eba!2sKutiyana%20Memon%20Community%20Hall!5e0!3m2!1sen!2s!4v1700171298512!5m2!1sen!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- ********************************footer*********************************** -->
+    <section>
+        <footer>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> Quick Link</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about us">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#Categories">Categories</a>
+
+                </div>
+                <div class="col-md-4 ">
+                    <h3>Contact Info</h3>
+                    <a href="Kutiyana Memon Community"><i class="fa-solid fa-location-dot"></i> &nbsp;
+                        Kutiyana
+                        Memon Community</a>
+                    <a href="mailto:manusaleem509@gmail.com"><i
+                            class="fa-solid fa-envelope"></i>&nbsp;manusaleem509@gmail.com</a>
+                    <a href="0315-2927789"> <i class="fa-solid fa-phone"></i>&nbsp;0315-2927789</a>
+                </div>
+
+                <div class="col-md-4 social-link">
+                    <h3>Social Media Links</h3>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/0315-2927789" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </section>
+
+
+
+
+
+
+
+
+    
+
+
+
+    <script>
+        function desifood() {
+            window.location.href = "menu.html";
+        }
+
+        function chinesefood() {
+            window.location.href = "chinese.html";
+        }
+
+        function submitbtn() {
+            document.getElementById("myfoam").submitbtn()
+
+        }
+
+        
+    </script>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

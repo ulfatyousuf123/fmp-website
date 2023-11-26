@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making login foam with ulfat.....</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+
+        .container {
+            border: 4px solid brown;
+            box-shadow: 10px 10px 10px brown;
+            color: brown;
+            border-radius: 10px;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+
+        }
+
+        .container h1 {
+            font-size: 48px;
+            border-bottom: 2px solid brown;
+            margin-bottom: 40px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .box {
+            width: 100%;
+           
+        }
+
+        .box input {
+            border: none;
+            color: brown;
+            width: 75%;
+            margin: 12px 0px;
+            padding: 12px 10px;
+            outline: none;
+            border-radius: 7px;
+            font-size: 20px;
+        }
+
+        .btn {
+            cursor: pointer;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            margin: 18px;
+            width: 25%;
+            font-weight: bold;
+            color: brown;
+            padding: 7px;
+            background: none;
+            border-radius: 20px
+        }
+
+        .box i {
+            text-align: center;
+            width: 25px;
+            font-size: 24px;
+            padding: 10px;
+
+        }
+
+        .btn:hover {
+            color: brown;
+            background: white;
+        }
+
+        .box input:hover {
+            color: white;
+            background: brown;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Login foam</h1>
+        <div class="box">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <a href="login.html"></a><button onclick="login()" class="btn">Login</button></a>
+        
+    <a href="signup.html"><button onclick="signup()" class="btn">Sign Up</button></a>
+
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>

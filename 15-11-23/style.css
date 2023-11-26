@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    cursor: pointer;
+    /* background-color: rgb(244, 253, 255) ; */
+}
+
+nav {
+    background-color: aliceblue !important;
+}
+
+
+
+.navbar-brand {
+    font-family: cursive;
+    font-size: 48px;
+    color: rgb(25, 67, 125) !important;
+    /* color: wheat !important; */
+    text-decoration: underline !important;
+    margin-left: 55px;
+}
+
+.nav-item {
+    /* color: wheat !important; */
+    color: rgb(25, 67, 125) !important;
+    font-family: cursive;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    /* background-color: rgb(244, 253, 255); */
+    background: bisque;
+    border-radius: 15px;
+    opacity: 0.2;
+}
+
+.homeimg {
+    background: url(images/homecap.PNG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.homeimg h1 {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    color: brown;
+}
+
+.homeimg button {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    color: brown;
+    background: rgb(244, 253, 255);
+    font-size: 25px;
+    border: none;
+    font-weight: 700;
+}
+
+
+/* **********************welcome message*****************************  */
+
+/* .message {
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    width: 50%;
+    height: 400px;
+    position: relative;
+    top: 80%;
+    left: 26%;
+    background-color: aliceblue;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 21px lightgrey;
+
+
+} */
+
+#message{
+      height: 400px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+}
+.message{
+    text-align: center;
+    background: rgb(244, 253, 255);
+    position: absolute;
+    border: 2px solid transparent;
+    width: 600px;
+    bottom: 170px;
+    box-shadow: 2px 2px 21px lightgrey;
+
+}
+
+
+
+
+/* **********************************MENU************************************** */
+
+
+
+.menusection {
+    /* background-color: antiquewhite;  */
+    width: 100%;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 133px 133px 133px;
+    grid-template-rows: 133px 133px 133px;
+    row-gap: 45px;
+    column-gap: 35px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+    /* display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction:row;
+     */
+}
+
+#Categories h4 {
+    color: rgb(25, 67, 125);
+
+}
+
+.items {
+    background-color: aliceblue;
+    width: 250px;
+    height: 200px;
+    /* border-radius: 15px; */
+    /* border: 2px solid white; */
+    text-align: center;
+    padding: 6px 6px;
+    font-size: 20px;
+
+
+}
+
+.items p {
+    /* padding: 0px 2px; */
+    margin: 5px 5px;
+    color: rgb(25, 67, 125);
+    font-size: 25px;
+}
+
+
+.items:hover {
+    border-radius: 10px 10px 10px;
+    box-shadow: 2px 2px 21px lightgrey;
+}
+
+.text-center {
+    text-align: center;
+    text-decoration: underline;
+    color: darkcyan;
+    font-size: 50px;
+    /* line-height: 3.1em; */
+}
+
+/* ****************************about us******************************* */
+
+.about-us h1 {
+    text-align: center;
+    color: rgb(25, 67, 125);
+    text-decoration: underline;
+    margin-top: 100px;
+
+}
+
+.about-us p {
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+/* .about-us img{
+ width: 50%;
+    height: 50px;
+    margin-top: 100px;
+    margin-right: 30px;
+} */
+
+
+
+/* *****************************contact us**************************** */
+.form input {
+    border-radius: 20px;
+    padding: 15px 15px;
+    width: 75%;
+    margin: 10px;
+    box-shadow: 2px 2px 21px lightgrey;
+    border: none;
+    color: rgb(25, 67, 125) !important;
+    font-size: 20px;
+}
+
+.form textarea {
+    border-radius: 20px;
+    padding: 5px 5px;
+    width: 75%;
+    margin: 10px;
+    box-shadow: 2px 2px 21px lightgrey;
+    border: none;
+}
+
+.form h2 {
+    color: rgb(25, 67, 125) !important;
+    font-size: 48px;
+}
+
+#contact {
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+.contact h1,
+h5 {
+    color: rgb(25, 67, 125) !important;
+    padding: 10px 20px;
+}
+
+.contact li {
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 2.5em;
+    letter-spacing: 0.5em;
+
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.social-link a {
+    border: none;
+    border-radius: 50px;
+    font-size: 40px;
+    align-items: center;
+    color: rgb(25, 67, 125) !important;
+
+
+}
+
+/* *************************************footer****************************************** */
+footer {
+    font-size: 20px;
+    background-color: rgb(25, 67, 125) !important;
+    color: white;
+    padding-left: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+
+}
+
+footer h3 {
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white !important;
+    display: block;
+    /* padding-left: 40px; */
+    padding-bottom: 20px;
+}
+
+footer i {
+    color: white !important;
+}
+
+footer .social-link {
+    font-size: 48px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    .message {
+        font-size: 1em;
+    }
+.homeimg{
+    /* height:600px; */
+    /* width: 100%; */
+    margin-bottom: 50px;
+    /* border: 2px solid red; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+    #Categories div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 21px lightgrey;
+        border-radius: 10px 10px 10px;
+        
+
+    }
+    
+    #Categories h4{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    #homecap{
+        position:sticky;
+    }
+
+}
+
